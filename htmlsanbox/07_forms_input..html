@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <form action="process.php">
+        <!-- Text -->
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" value="Julian">
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter an email">
+        </div>
+        <!-- Message -->
+        <div>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <!-- Select -->
+        <div>
+            <label for="sex">Sex</label><br>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female"selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <!-- Radio -->
+        <div>
+            <label for="mermbership">Mermbership</label><br>
+            <input type="radio" name="mermbership" value="simple" id="mermbership" checked>Simple
+            <input type="radio" name="mermbership" value="standard" id="mermbership">Standard
+            <input type="radio" name="mermbership" value="super" id="mermbership">Super
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <label for="likes">I like..</label><br>
+            <input type="checkbox" name="likes" value="bike" id="likes" checked>Bike
+            <input type="checkbox" name="likes" value="car" id="likes">Car
+            <input type="checkbox" name="likes" value="boat" id="likes">Boat
+        </div>
+        <!-- Input submit -->
+        <input type="submit" value="submit">
+        <!-- button submit-->
+        <!-- <button type="submit">Submit</button> -->
+        <!-- Button reset -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
